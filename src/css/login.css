@@ -1,0 +1,102 @@
+.login {
+  background-color: #fff;
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 563px;
+  background-color: #f2f2f2;
+  margin: 70px auto;
+}
+.container img {
+  width: 21px;
+  height: 21px;
+}
+.container .img1 {
+  position: absolute;
+  left: 75px;
+  top: 160px;
+}
+.container .img2 {
+  position: absolute;
+  left: 75px;
+  top: 225px;
+}
+.container .img3 {
+  position: absolute;
+  left: 75px;
+  top: 290px;
+}
+
+.login-top {
+  overflow: hidden;
+  padding: 46px 130px 40px 136px;
+}
+.login-top img {
+  width: 120px;
+  height: 60px;
+  padding-right: 37px;
+}
+.login-top span {
+  font-size: 28px;
+  display: inline-block;
+  height: 60px;
+  color: #000;
+  line-height: 60px;
+}
+
+input {
+  width: 444px;
+  height: 48px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  padding-left: 45px;
+  margin-left: 63px;
+  margin-bottom: 15px;
+}
+
+.register {
+  width: 270px;
+}
+
+.randomNum {
+  display: inline-block;
+  width: 136px;
+  text-align: center;
+  line-height: 48px;
+  height: 48px;
+  border: 1px solid #ccc;
+  margin-right: 46px;
+  font-size: 16px;
+}
+
+.bottom {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.bottom span {
+  font-size: 14px;
+  display: inline-block;
+  padding-left: 10px;
+}
+.bottom .fr {
+  padding-right: 100px;
+  color: #009688;
+}
+
+.reb_psw {
+  width: 24px;
+  height: 24px;
+}
+
+.btn_login {
+  text-align: center;
+  padding-left: 0;
+  width: 490px;
+  background: #009688;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=login.css.map */
