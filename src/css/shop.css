@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/* left */
+html, body, .box, .container {
+  height: 100%;
+  position: relative;
+}
+
+.box_left {
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #20222A;
+  width: 230px;
+  color: #C2C2C2;
+  position: fixed;
+}
+.box_left h1 {
+  font-size: 18px;
+  line-height: 55px;
+  height: 55px;
+  font-weight: bold;
+  text-align: center;
+}
+.box_left h2 {
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  text-align: center;
+}
+.box_left a {
+  display: block;
+  height: 34px;
+  line-height: 34px;
+  font-size: 18px;
+  text-align: center;
+  color: #C2C2C2;
+}
+.box_left img {
+  width: 14px;
+  height: 12px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.box_left > div {
+  position: relative;
+}
+
+/*left榧犳爣绉诲叆鐗规晥*/
+.box_left h2:hover {
+  opacity: 0.3;
+}
+
+.box_left a:hover {
+  opacity: 0.3;
+}
+
+.box_left h1:hover {
+  opacity: 0.3;
+}
+
+ /*============================================/* 
+
+/* right閮ㄥ垎 */
+.box_right {
+  background: #fff;
+  width: 970px;
+  position: relative;
+}
+
+/* nav=================== */
+.nav {
+  height: 55px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 40px;
+}
+.nav a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #999;
+  padding-left: 5px;
+  line-height: 54px;
+}
+.nav .a1 {
+  padding-left: 38px;
+}
+.nav .a3 {
+  color: #666;
+}
+
+.nav .a1:hover, .nav .a2:hover {
+  color: #009688;
+}
+
+/* main   */
+.main {
+  border: 20px solid #F2F2F2;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.shop1 {
+  margin-bottom: 20px;
+}
+.shop1 span {
+  display: inline-block;
+  width: 150px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 18px;
+  text-align: right;
+  border: 1px solid #fff;
+  margin-right: 30px;
+}
+.shop1 select, .shop1 input {
+  width: 518px;
+  height: 38px;
+  border: 1px solid #ccc;
+  vertical-align: top;
+}
+.shop1 i {
+  margin-left: 20px;
+}
+
+.shop2 {
+  display: inline-block;
+  width: 400px;
+  margin-bottom: 20px;
+}
+.shop2 span {
+  display: inline-block;
+  width: 150px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 18px;
+  text-align: right;
+  border: 1px solid #fff;
+  margin-right: 30px;
+}
+.shop2 input {
+  width: 120px;
+  height: 38px;
+  border: 1px solid #ccc;
+  vertical-align: top;
+}
+
+.price2 span {
+  width: 80px;
+}
+
+.kucun {
+  margin-bottom: 20px;
+}
+.kucun span {
+  display: inline-block;
+  width: 150px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 18px;
+  text-align: right;
+  border: 1px solid #fff;
+  margin-right: 30px;
+}
+.kucun input {
+  width: 120px;
+  height: 38px;
+  border: 1px solid #ccc;
+  vertical-align: top;
+}
+
+.shop_in {
+  margin-bottom: 20px;
+}
+.shop_in span {
+  display: inline-block;
+  width: 150px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 18px;
+  text-align: right;
+  border: 1px solid #fff;
+  margin-right: 30px;
+}
+.shop_in input {
+  width: 120px;
+  height: 38px;
+  border: 1px solid #ccc;
+  vertical-align: top;
+}
+
+.buy {
+  margin-bottom: 20px;
+}
+.buy span {
+  display: inline-block;
+  width: 150px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 18px;
+  text-align: right;
+  border: 1px solid #fff;
+  margin-right: 30px;
+}
+.buy input {
+  width: 120px;
+  height: 38px;
+  border: 1px solid #ccc;
+  vertical-align: top;
+}
+
+.detalis {
+  margin-bottom: 20px;
+}
+.detalis span {
+  display: inline-block;
+  width: 150px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 18px;
+  text-align: right;
+  border: 1px solid #fff;
+  margin-right: 30px;
+  vertical-align: top;
+}
+.detalis textarea {
+  width: 518px;
+  height: 170px;
+}
+
+.btn_yes {
+  width: 114px;
+  height: 44px;
+  background: #58bc58;
+  text-align: center;
+  line-height: 44px;
+  color: #fff;
+  margin-left: 190px;
+}
+
+.shop_img {
+  height: 150px;
+}
+.shop_img i {
+  display: inline-block;
+  position: relative;
+  margin-right: 40px;
+}
+.shop_img span {
+  display: inline-block;
+  width: 150px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 18px;
+  text-align: right;
+  border: 1px solid #fff;
+  margin-right: 30px;
+}
+.shop_img img {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+}
+.shop_img input {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 45px;
+  bottom: -15px;
+}
+
+/*# sourceMappingURL=shop.css.map */

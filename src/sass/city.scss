@@ -184,16 +184,19 @@ html,body,.box,.container{
             }
         }
         .span1,.span2{
-            width: 40px;
+            width: 80px;
         }
         .span3{
             width: 160px;
         }
+        .span4{
+            width: 200px;
+        }
         .span9{
-            width: 100px;
+            width: 300px;
         }
         .span10{
-            width: 160px;
+            width: 200px;
             border:0;
         }
     }
@@ -263,5 +266,3 @@ html,body,.box,.container{
         text-align:center;
     }
 }
-
-

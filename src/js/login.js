@@ -51,8 +51,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
                         if(arr.includes(xhr.status)){
                             let obj = JSON.parse(xhr.responseText);
                             if(obj.code=="1"){
-                                // location.href = "";
-                                alert("登录成功");
+                                location.href = "../html/goods_list.html";
+                                // alert("登录成功");
                             }else{
                                 alert("密码错误")
                             }

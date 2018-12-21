@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <title>商品列表管理</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/user.css" />
-    <script type="text/javascript" src="../js/goods_list.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/order.css" />
+    <script type="text/javascript" src="../js/order.js"></script>
 </head>
 <body>
     <div class="box">
@@ -32,24 +32,13 @@
             <!-- right -->
             <div class="fr box_right">
                 <div class="nav">
-                    <a class="a1" href="./goods_list.html">首页  /</a>
-                    <a class="a2" href="#">商品管理  /</a>
-                    <a class="a3" href="#">商品列表</a>
+                    <a class="a1" href="#">首页  /</a>
+                    <a class="a2" href="#">订单管理  /</a>
+                    <a class="a3" href="#">订单列表</a>
                 </div>
                 <div class="main">
                     <div class="main_1">
-                        <span class="btn_add">添加</span>
                         <span class="btn_del">删除</span>
-                        <input class="title" type="text" placeholder="请输入商品名称"/>
-                        <select>
-                            <option disabled>请选择城市</option>
-                            <option value="广州">广州</option>
-                            <option value="杭州">杭州</option>
-                            <option value="深圳">深圳</option>
-                            <option value="上海">上海</option>
-                            <option value="北京">北京</option>
-                        </select>
-                        <span class="btn_search">搜索</span>
                     </div>
                     <!-- 内容 -->
                     <ul class="main_2">
@@ -63,27 +52,27 @@
                             </span>
                             <span class="fl span3">商品名称</span>
                             <span class="fl span4" data-type="city">
-                                城市
+                                价格
                                 <img class="img_up" src="../image/sanjiaoup1.png">
                                 <img class="img_down" src="../image/sanjiaodown1.png">
                             </span>
                             <span class="fl span5" data-type="price2">
-                                价格(原价)
+                                数量
                                 <img class="img_up" src="../image/sanjiaoup1.png">
                                 <img class="img_down" src="../image/sanjiaodown1.png">
                             </span>
                             <span class="fl span6" data-type="price1">
-                                价格(现价)
+                                运费
                                 <img class="img_up" src="../image/sanjiaoup1.png">
                                 <img class="img_down" src="../image/sanjiaodown1.png">
                             </span>
                             <span class="fl span7" data-type="kucun">
-                                库存
+                                商品总额
                                 <img class="img_up" src="../image/sanjiaoup1.png">
                                 <img class="img_down" src="../image/sanjiaodown1.png">
                             </span>
                             <span class="fl span8" data-type="zhuangtai">
-                                状态
+                                订单总额
                                 <img class="img_up" src="../image/sanjiaoup1.png">
                                 <img class="img_down" src="../image/sanjiaodown1.png">
                             </span>

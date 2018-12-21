@@ -12,10 +12,6 @@ document.addEventListener("DOMContentLoaded",()=>{
     let btn_del = document.querySelector(".btn_del");
     let btn_add = document.querySelector(".btn_add");
     let total = document.querySelector(".total"); 
-    let title = document.querySelector(".title");
-    let select =document.querySelector("select");
-
-    let btn_search = document.querySelector(".btn_search");
     var xiajiaArr;
     var oneArr;
     var emArr;
@@ -51,7 +47,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                 colorandbg();
             }
         }
-        xhr.open("get","/goodlist",true);
+        xhr.open("get","/user",true);
         xhr.send();
     }
     //封装表格内容数据渲染
@@ -60,17 +56,15 @@ document.addEventListener("DOMContentLoaded",()=>{
                     return `<li data-id="${item.id}">
                             <span class="fl span1"><input class="one" type="checkbox"></span>
                             <span class="fl span2">${item.id}</span>
-                            <span class="fl span3">${item.shop}</span>
+                            <span class="fl span3">${item.username}</span>
                             <span class="fl span4">${item.city}</span>
-                            <span class="fl span5">${item.price2}</span>
-                            <span class="fl span6">${item.price1}</span>
-                            <span class="fl span7">${item.kucun}</span>
-                            <span class="fl span8">${item.state}</span>
+                            <span class="fl span5">${item.gender}</span>
+                            <span class="fl span6">${item.career}</span>
+                            <span class="fl span7">${item.pingfen}</span>
                             <span class="fl span9">${item.time}</span>
                             <span class="fl span10">
                                 <i class="write">写入</i>
                                 <i class="del_shop">删除</i>
-                                <i class="xiajia">${item.state}</i>
                             </span>
                         </li>`
                 }).join("");
@@ -105,7 +99,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                     content(obj.data);
                 }
             }
-            xhr.open("get",`/goodlist/apage?page=${e.target.innerText}&qty=${yeshu.value}&type=${type}&desc=${desc}`,true);
+            xhr.open("get",`/user/apage?page=${e.target.innerText}&qty=${yeshu.value}&type=${type}&desc=${desc}`,true);
             xhr.send();
         }
         
@@ -133,7 +127,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                         
                     }
                 }
-                xhr.open("get",`/goodlist/apage?page=${activeNum-1}&qty=${yeshu.value}&type=${type}&desc=${desc}`,true);
+                xhr.open("get",`/user/apage?page=${activeNum-1}&qty=${yeshu.value}&type=${type}&desc=${desc}`,true);
                 xhr.send();
 
             }
@@ -159,7 +153,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                         
                     }
                 }
-                xhr.open("get",`/goodlist/apage?page=${activeNum*1+1}&qty=${yeshu.value}&type=${type}&desc=${desc}`,true);
+                xhr.open("get",`/user/apage?page=${activeNum*1+1}&qty=${yeshu.value}&type=${type}&desc=${desc}`,true);
                 xhr.send();
 
             }
@@ -198,7 +192,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                 
             }
         }
-        xhr.open("get",`/goodlist/apage?page=1&qty=${yeshu.value}&type=${type}&desc=1`,true);
+        xhr.open("get",`/user/apage?page=1&qty=${yeshu.value}&type=${type}&desc=1`,true);
         xhr.send();
         topages.value = "";
 
@@ -226,11 +220,10 @@ document.addEventListener("DOMContentLoaded",()=>{
                 
             }
         }
-        xhr.open("get",`/goodlist/apage?page=${topages.value}&qty=${yeshu.value}&type=${type}&desc=1`,true);
+        xhr.open("get",`/user/apage?page=${topages.value}&qty=${yeshu.value}&type=${type}&desc=1`,true);
         xhr.send();
         topages.value = "";
     }
-
     //点击排序
     title_li.onclick = (e)=> {
         if(e.target.className == "img_up"){
@@ -248,12 +241,10 @@ document.addEventListener("DOMContentLoaded",()=>{
                     let obj = JSON.parse(xhr.responseText); 
                     //表格内容渲染
                     content(obj.data);
-                    // removeAllPageActive();
-                    // yema.children[0].classList.add("active");
                     
                 }
             }
-            xhr.open("get",`/goodlist/apage?page=${highLightPage(yema.children)}&qty=${yeshu.value}&type=${type}&desc=1`,true);
+            xhr.open("get",`/user/apage?page=1&qty=${yeshu.value}&type=${type}&desc=1`,true);
             xhr.send();
         }
 
@@ -272,12 +263,10 @@ document.addEventListener("DOMContentLoaded",()=>{
                     let obj = JSON.parse(xhr.responseText); 
                     //表格内容渲染
                     content(obj.data);
-                    // removeAllPageActive();
-                    // yema.children[0].classList.add("active");
                     
                 }
             }
-            xhr.open("get",`/goodlist/apage?page=${highLightPage(yema.children)}&qty=${yeshu.value}&type=${type}&desc=-1`,true);
+            xhr.open("get",`/user/apage?page=1&qty=${yeshu.value}&type=${type}&desc=-1`,true);
             xhr.send();
         }
 
@@ -340,7 +329,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                         if(obj.code == 1){
                             //删除成功执行
                             emArr = document.querySelectorAll("em");
-                            xhr.open("get",`/goodlist?page={highLightPage(emArr)}&qty=${yeshu.value}&type=${type}&desc=${desc}`,true);
+                            xhr.open("get",`/user?page={highLightPage(emArr)}&qty=${yeshu.value}&type=${type}&desc=${desc}`,true);
                             xhr.send();
                             xhr.onload = () => {
                                 var obj = JSON.parse(xhr.responseText);
@@ -349,7 +338,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                         } 
                     }
                 }
-                xhr.open("delete",`/goodlist/async`,true);
+                xhr.open("delete",`/user/async`,true);
                 xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
                 xhr.send(`id=${del_id}`);
             }
@@ -377,14 +366,14 @@ document.addEventListener("DOMContentLoaded",()=>{
                 //        }
                 //     }
                 // }
-                xhr.open("post",`/goodlist/async`,true);
+                xhr.open("post",`/user/async`,true);
                 xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
                 xhr.send(`id=${e.target.parentElement.parentElement.dataset.id}&state=${state}`);
         }
 
         //点击写入
         if(e.target.className == "write"){
-                location.href = `../html/shop.html?id=${e.target.parentElement.parentElement.dataset.id}`;    
+                location.href = `../html/write_user.html?id=${e.target.parentElement.parentElement.dataset.id}`    
         
         }
    })
@@ -415,8 +404,9 @@ document.addEventListener("DOMContentLoaded",()=>{
                             let obj = JSON.parse(xhr.responseText); 
                             if(obj.code == 1){
                                 //删除成功执行
+                        
                                 emArr = document.querySelectorAll("em");
-                                xhr.open("get",`/goodlist?page={highLightPage(emArr)}&qty=${yeshu.value}&type=${type}&desc=${desc}`,true);
+                                xhr.open("get",`/user?page={highLightPage(emArr)}&qty=${yeshu.value}&type=${type}&desc=${desc}`,true);
                                 xhr.send();
                                 xhr.onload = () => {
                                     var obj = JSON.parse(xhr.responseText);
@@ -425,7 +415,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                             } 
                         }
                     }
-                    xhr.open("delete",`/goodlist/async`,true);
+                    xhr.open("delete",`/user/async`,true);
                     xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
                     xhr.send(`id=${ifCheck(oneArr)[a]}`);
                 }
@@ -470,37 +460,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     }
     //点击添加
     btn_add.onclick = () => {
-        location.href = "../html/shop.html";
-    }
-
-
-    //模糊查询
-    btn_search.onclick = () => {
-        if(title.value){
-            let xhr = new XMLHttpRequest();
-            let arr = [200,304];
-            xhr.onload = () =>{
-                if(arr.includes(xhr.status)){
-                    let obj = JSON.parse(xhr.responseText); 
-                    if(obj.length>0){
-                        //表格内容渲染
-                        content(obj.data);
-                        total.children[0].innerText=obj.length;
-                    }else{
-                        alert("没有符合的商品");
-                    }
-                    // removeAllPageActive();
-                    // yema.children[0].classList.add("active");
-                    
-                }
-            }
-            xhr.open("get",`/goodlist/asyncmohu?shop=${title.value}&city=${select.value}`,true);
-            xhr.send();
-
-
-        }else{
-            alert("搜索内容不能为空");
-        }
+        location.href = "../html/write_user.html";
     }
 
 

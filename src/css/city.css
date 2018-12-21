@@ -188,16 +188,19 @@ html, body, .box, .container {
   background: #F2F2F2;
 }
 .main_2 li .span1, .main_2 li .span2, .main_3 li .span1, .main_3 li .span2 {
-  width: 40px;
+  width: 80px;
 }
 .main_2 li .span3, .main_3 li .span3 {
   width: 160px;
 }
+.main_2 li .span4, .main_3 li .span4 {
+  width: 200px;
+}
 .main_2 li .span9, .main_3 li .span9 {
-  width: 100px;
+  width: 300px;
 }
 .main_2 li .span10, .main_3 li .span10 {
-  width: 160px;
+  width: 200px;
   border: 0;
 }
 
@@ -265,4 +268,4 @@ html, body, .box, .container {
   text-align: center;
 }
 
-/*# sourceMappingURL=goods_list.css.map */
+/*# sourceMappingURL=city.css.map */

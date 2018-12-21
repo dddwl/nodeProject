@@ -1,0 +1,269 @@
+/* left */
+
+html,body,.box,.container{
+    height: 100%;
+    position:relative;
+    // overflow:hidden;   
+}
+.box_left{
+    top:0;
+    left:0;
+    height:100%;
+    background: #20222A;
+    width: 230px;
+    color:#C2C2C2;
+    position:fixed;
+    h1{
+        font-size:18px;
+        line-height:55px;
+        height: 55px;
+        font-weight:bold;
+        text-align:center;
+    }
+    h2{
+        height: 50px;
+        line-height:50px;
+        font-size:22px;
+        text-align:center;
+        
+
+    }
+    a{
+        display:block;
+        height: 34px;
+        line-height:34px;
+        font-size:18px;
+        text-align:center;
+        color:#C2C2C2;
+    }
+    img{
+        width: 14px;
+        height: 12px;
+        position:absolute;
+        top:20px;
+        right:25px;
+    }
+}
+.box_left>div{
+    position: relative;
+}
+
+
+/*left鼠标移入特效*/
+.box_left h2:hover{
+    opacity:0.3; 
+}
+.box_left a:hover{
+    opacity:0.3; 
+}
+.box_left h1:hover{
+    opacity:0.3; 
+}
+ /*============================================/* 
+
+/* right部分 */
+
+.box_right{
+    background: #fff;
+    width: 970px;
+    position:relative;
+    // overflow:hidden;
+}
+
+/* nav=================== */
+.nav{
+    height: 55px;
+    border-bottom:1px solid #ccc;
+    margin-bottom:40px;
+    a{
+        font-size:14px;
+        font-weight:bold;
+        color:#999;
+        padding-left:5px;
+        line-height:54px;
+    }
+    .a1{
+       padding-left:38px; 
+    }
+    .a3{
+        color:#666;
+    }
+}
+.nav .a1:hover,.nav .a2:hover{
+    color:rgb(0,150,136);
+}
+/* main   */
+.main{
+    border:20px solid #F2F2F2;
+    overflow:hidden;
+    padding:20px 0;
+}
+
+.shop1{
+    margin-bottom:20px;
+    span{
+        display:inline-block;
+        width: 150px;
+        height: 38px;
+        line-height:38px;
+        font-size:18px;
+        text-align: right;
+        border:1px solid #fff;
+        margin-right:30px;
+    }
+    select,input{
+        width: 518px;
+        height: 38px;
+        border:1px solid #ccc;
+        vertical-align:top;
+    }
+    i{
+        margin-left:20px;
+    }
+}
+.shop2{
+    display:inline-block;
+    width: 400px;
+    margin-bottom:20px;
+    span{
+        display:inline-block;
+        width: 150px;
+        height: 38px;
+        line-height:38px;
+        font-size:18px;
+        text-align: right;
+        border:1px solid #fff;
+        margin-right:30px;
+    }
+    input{
+        width: 120px;
+        height: 38px;
+        border:1px solid #ccc;
+        vertical-align:top;
+    }
+}
+.price2{
+    span{
+        width: 80px; 
+    } 
+}
+.kucun{
+    margin-bottom:20px;
+    span{
+        display:inline-block;
+        width: 150px;
+        height: 38px;
+        line-height:38px;
+        font-size:18px;
+        text-align: right;
+        border:1px solid #fff;
+        margin-right:30px;
+    }
+    input{
+        width: 120px;
+        height: 38px;
+        border:1px solid #ccc;
+        vertical-align:top;
+    }
+}
+.shop_in{
+    margin-bottom:20px;
+    span{
+        display:inline-block;
+        width: 150px;
+        height: 38px;
+        line-height:38px;
+        font-size:18px;
+        text-align: right;
+        border:1px solid #fff;
+        margin-right:30px;
+    }
+    input{
+        width: 120px;
+        height: 38px;
+        border:1px solid #ccc;
+        vertical-align:top;
+    }
+}
+.buy{
+    margin-bottom:20px;
+    span{
+        display:inline-block;
+        width: 150px;
+        height: 38px;
+        line-height:38px;
+        font-size:18px;
+        text-align: right;
+        border:1px solid #fff;
+        margin-right:30px;
+    }
+    input{
+        width: 120px;
+        height: 38px;
+        border:1px solid #ccc;
+        vertical-align:top;
+    }
+}
+.detalis{
+    margin-bottom:20px;
+    span{
+        display:inline-block;
+        width: 150px;
+        height: 38px;
+        line-height:38px;
+        font-size:18px;
+        text-align: right;
+        border:1px solid #fff;
+        margin-right:30px;
+        vertical-align:top;
+    }
+    textarea{
+        width: 518px;
+        height: 170px;
+
+    }
+}
+.btn_yes{
+    width: 114px;
+    height: 44px;
+    background: #58bc58;
+    text-align:center;
+    line-height:44px;
+    color:#fff;
+    margin-left:190px;
+}
+.shop_img{
+    height: 150px;
+    i{  
+        display:inline-block;
+        position:relative;
+        margin-right:40px;
+    }
+    span{
+        display:inline-block;
+        width: 150px;
+        height: 38px;
+        line-height:38px;
+        font-size:18px;
+        text-align: right;
+        border:1px solid #fff;
+        margin-right:30px;
+    }
+    img{
+        display:inline-block;
+        width: 100px;
+        height: 100px;
+        border:1px solid #ccc;
+    }
+    input{
+        width: 13px;
+        height: 13px;
+        position:absolute;
+        left:45px;
+        bottom:-15px;
+    }
+}
+select{
+    width: 122px;
+    height: 40px;
+}

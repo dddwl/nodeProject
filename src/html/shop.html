@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>商品编辑和添加商品</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/shop.css" />
+    <script type="text/javascript" src="../js/shop.js"></script>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <!-- left -->
+            <div class="fl box_left">
+                <h1>后台管理系统</h1>
+                <div class="shop">
+                    <h2>商品管理</h2>
+                    <a href="./goods_list.html">商品列表</a>
+                    <a href="javascript:;">商品分类</a>
+                    <a href="javascript:;">添加商品</a>
+                </div>
+                <div class="shop">
+                    <h2>用户管理</h2>
+                    <a href="javascript:;">用户列表</a>
+                    <a href="javascript:;">添加用户</a>
+                </div>
+                <div class="shop">
+                    <h2>订单管理</h2>
+                    <a href="javascript:;">订单列表</a>
+                </div>
+            </div>
+            <!-- right -->
+            <div class="fr box_right">
+                <div class="nav">
+                    <a class="a1" href="#">首页  /</a>
+                    <a class="a2" href="#">商品管理  /</a>
+                    <a class="a3" href="./shop.html">添加商品</a>
+                </div>
+                <div class="main">
+                    <div class="shop1 shop_name">
+                        <span>商品名称</span>
+                        <input type="text" class="input_name"/>
+                        <i>50字以内</i>
+                    </div>
+                    <div class="shop1 shop_tital">
+                        <span>商品id</span>
+                        <input type="text" class="input_id"/>
+                    </div>
+                    <div class="shop2 price1">
+                        <span>商品价格</span>
+                        <input type="text" class="input_price1"/>
+                    </div>
+                    <div class="shop2 price2">
+                        <span>销售价格</span>
+                        <input type="text" class="input_price2"/>
+                    </div>
+                    <div class="shop1 shop_fenlei">
+                        <span>城市分类</span>
+                        <select id="">
+                            <option value="北京">北京</option>
+                            <option value="上海">上海</option>
+                            <option value="广州">广州</option>
+                            <option value="深圳">深圳</option>
+                        </select>
+                    </div>
+                    <div class="shop_img">
+                        <span>商品图片</span>
+                        <i>
+                            <img src="" alt="" />
+                            <input type="radio" name="img"/>
+                        </i>
+                        <i>
+                            <img src="" alt="" />
+                            <input type="radio" name="img"/>
+                        </i>
+                        <i>
+                            <img src="" alt="" />
+                            <input type="radio" name="img"/>  
+                        </i> 
+                    </div>
+                    <div class="kucun">
+                        <span>库存</span>
+                        <input type="text" class="input_kucun"/>
+                    </div>
+                    <div class="shop_in">
+                        <span>商品属性</span>
+                        <input type="text" />
+                        <input type="text" />
+                        <input type="text" />
+                    </div>
+                    <div class="buy">
+                        <span>上/下架</span>
+                        <input type="button" value="下架" class="shangjia" />  
+                    </div>
+                    <div class="detalis">
+                        <span>商品详情</span>
+                        <textarea class="textarea"></textarea>
+                    </div>
+                    <div class="btn_yes">确认</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

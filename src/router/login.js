@@ -8,7 +8,7 @@ const MongoClient = mongodb.MongoClient;
 let Router = express.Router();
 let urlencoded = bodyParser.urlencoded({ extended: false });
 
-// 用户登录
+// 用户登录 '/checklogin'
 Router.post('/',urlencoded,(req,res)=>{
     // console.log("req.body",req.body);
     let {username,password} = req.body;
