@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded",() => {
     //获取元素
     let input_name = document.querySelector(".input_name");
     let textarea = document.querySelector(".textarea");
-    let yes = document.querySelector(".yes");
+    let btn_yes = document.querySelector(".btn_yes");
+    //console.log(btn_yes)
     //
     //判断是否存在传参
     var getcity = location.search;
@@ -11,7 +12,7 @@ document.addEventListener("DOMContentLoaded",() => {
         input_name.value = getcity;
         textarea.innerText = getcity;
     }
-    yes.onclick = () =>{
+    btn_yes.onclick = () =>{
         if(input_name.value){
             if(textarea.innerText){
                 let xhr = new XMLHttpRequest();
