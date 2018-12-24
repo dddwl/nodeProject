@@ -1,5 +1,5 @@
 数据库名称：nodeproject;
-分类集合名称：city名称
+分类集合名称：city;
 商品列表集合名称：goods;
 订单表集合名称：order;
 用户名集合名称：username;
